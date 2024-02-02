@@ -24,7 +24,7 @@ const ProjectCard = ({ image, title, text, demo, repo }: Props) => {
     return (
         <div
 
-            className='w-[250px] h-[130px] sm:w-[450px] sm:h-[280px] rounded-md cursor-pointer'>
+            className='w-[250px] h-[160px] sm:w-[450px] sm:h-[280px] rounded-md cursor-pointer'>
             <motion.div
                 className='flip-card-inner w-full h-full'
                 initial={false}
@@ -47,8 +47,8 @@ const ProjectCard = ({ image, title, text, demo, repo }: Props) => {
                     <div className='flex flex-col gap-2 sm:gap-2 sm:py-3 z-[30]'>
                         <h1 onClick={handleFlip} className='text-whote text-md md:text-2xl font-semibold'>{title}</h1>
                         <div className='flex justify-around'>
-                            <Link href={demo} className='border text-[5px] p-1 sm:text-[20px] sm:p-2' target="_blank">DEMO</Link>
-                            <Link href={repo} className='border text-[5px] p-1 sm:text-[20px] sm:p-2' target="_blank">REPO</Link>
+                            <Link href={demo} className='border text-[6px] px-4 py-3 sm:text-[20px] sm:p-2' target="_blank">DEMO</Link>
+                            <Link href={repo} className='border text-[6px] px-4 py-3 sm:text-[20px] sm:p-2' target="_blank">REPO</Link>
                         </div>
 
                         <p className='text-gray-200 text-[9px] sm:text-[17px]'>
